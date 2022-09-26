@@ -22,7 +22,7 @@ $buku = query("SELECT * FROM buku");
 <div class="container ">
     <div class="card mt-5 bg-secondary text-light">
         <div class="card-body text-light">
-            <h1 class="display-3 text-center ">Daftar Buku</h1>
+            <h1 class="display-3 text-center ">Daftar Buku Informatika</h1>
 
             <table class="table table-bordered table-striped table-hover text-center bg-info" >
                 <tr>
