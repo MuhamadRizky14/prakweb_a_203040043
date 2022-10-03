@@ -2,6 +2,10 @@
 require 'functions.php';
 $buku = query("SELECT * FROM buku");
 
+if (isset($_POST["cari"])) {
+    $buku = cari($_POST["keyword"]);
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -22,6 +26,14 @@ $buku = query("SELECT * FROM buku");
 <div class="container ">
     <div class="card mt-5 bg-secondary text-light">
         <div class="card-body text-light">
+        <div class="search">
+        <div class="container">
+            <form action="" method="POST">
+                <input type="text" name="keyword" placeholder="Search" autocomplete="off" autofocus id="keyword">
+                <input type="submit" name="cari" id="tombol-cari"></button>
+            </form>
+        </div>
+    </div>
             <h1 class="display-3 text-center ">Daftar Buku Informatika</h1>
 
             <table class="table table-bordered table-striped table-hover text-center bg-warning" >

@@ -22,3 +22,24 @@ while ($row = mysqli_fetch_assoc($result))
 
     return $rows;
 }
+
+function cari($keyword)
+{
+
+    $conn = koneksi();
+
+    $query = "SELECT * FROM buku
+    WHERE 
+    nama_buku LIKE '%$keyword%' OR
+    pengarang LIKE '%$keyword%'
+    ";
+
+
+    $result = mysqli_query($conn, $query);
+    $rows = [];
+    while ($row = mysqli_fetch_assoc($result)) {
+        $rows[] = $row;
+    }
+
+    return $rows;
+}
