@@ -24,7 +24,7 @@ $buku = query("SELECT * FROM buku");
         <div class="card-body text-light">
             <h1 class="display-3 text-center ">Daftar Buku Informatika</h1>
 
-            <table class="table table-bordered table-striped table-hover text-center bg-info" >
+            <table class="table table-bordered table-striped table-hover text-center bg-warning" >
                 <tr>
                     <th>No</th>
                     <th>Nama Buku</th>
