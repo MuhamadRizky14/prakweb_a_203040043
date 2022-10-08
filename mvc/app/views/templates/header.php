@@ -4,6 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Halaman <?= $data['judul']; ?></title>
+  <style>
+    body {
+      background-color: khaki;
+    }
+  </style>
 </head>
 
 <body>
